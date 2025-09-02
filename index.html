@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration">
+  <meta name="description" content="Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation.">
   <meta name="keywords" content="Exploration, Map Prediction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration"/>
-  <meta property="og:description" content="PIPE Planner is an autonomous exploration planner that reasons over the expected information gain over planned paths."/>
-  <meta property="og:url" content="https://pipe-planner.github.io"/>
-  <title>PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <meta property="og:title" content="Rofunc: The Full Process Python Package for Robot Learning from Demonstration and Robot Manipulation"/>
+  <meta property="og:description" content="Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation."/>
+  <meta property="og:url" content="https://github.com/Skylark0924/Rofunc"/>
+  <title>Rofunc: The Full Process Python Package for Robot Learning from Demonstration and Robot Manipulation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/github_icon.ico">
 
   <meta property="og:image" content="https://pipe-planner.github.io/assets/thumbnail.png" />
   <meta property="og:image:width" content="1281"/>
@@ -195,35 +195,29 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration</h1>
+            <h1 class="title is-1 publication-title">Rofunc: The Full Process Python Package for Robot Learning from Demonstration and Robot Manipulation</h1>
             <h3 class="is-size-5 has-text-weight-bold" style="color: orange;">
               IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025
             </h3>
             <br>
             <div class="is-size-6 publication-authors">
               <span class="author-block">
-                <a href="https://bsj970.github.io/" target="_blank">Seungjae Baek</a>*<sup>1,2</sup>,</span>
+                <a href="https://skylark0924.github.io/" target="_blank">Junjia Liu</a>*<sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://bradymoon.com/" target="_blank">Brady Moon</a>*<sup>2</sup>,</span>
+                <a href="https://feichenlab.com/members/" target="_blank">Chenzui Li</a>*<sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://seungchan-kim.github.io" target="_blank">Seungchan Kim</a>*<sup>2</sup>,</span>
+                <a href="https://feichenlab.com/members/" target="_blank">Donatie Delehelle</a>*<sup>1,2</sup>,</span>
               <br>
               <span class="author-block">
-                <a href="https://caomuqing.github.io/" target="_blank">Muqing Cao</a><sup>2</sup>,</span>
+                <a href="https://feichenlab.com/members/" target="_blank">Zhihao Li</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://cherieho.com/" target="_blank">Cherie Ho</a><sup>2</sup>,</span>
-              <span class="author-block">
-                <a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a><sup>2</sup>
-              </span>
-              <span class="author-block">
-                <a href="https://rml-unist.notion.site/" target="_blank">Jeong hwan Jeon</a><sup>1</sup>
-              </span>
+                <a href="https://feichenlab.com/prof-chens-personal-page" target="_blank">Fei Chen</a><sup>1</sup>,</span>
             </div>
 
             <div class="is-size-6 publication-authors">
-              <span class="author-block"><sup>1</sup>Ulsan National Institute of Science and Technology</span>
+              <span class="author-block"><sup>1</sup>The Chinese University of Hong Kong</span>
               <br>
-              <span class="author-block"><sup>2</sup>Carnegie Mellon University Robotics Institute</span>
+              <span class="author-block"><sup>2</sup>Istituto Italiano di Tecnologia, University of Genova</span>
             </div>
 
             <div class="is-size-6 publication-authors">
@@ -251,7 +245,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/castacks/pipe-planner"
+                  <a href="https://github.com/Skylark0924/Rofunc"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -284,11 +278,11 @@
                     </div>
                     <div class="dropdown-menu" id="dropdown-menu" role="menu">
                       <div class="dropdown-content">
-                        <a href="https://mapex-explorer.github.io" class="dropdown-item" target="_blank">
-                          MapEx Explorer
+                        <a href="https://github.com/Skylark0924/Rofunc" class="dropdown-item" target="_blank">
+                          Repository address
                         </a>
-                        <a href="mapexrl.github.io" class="dropdown-item" target="_blank">
-                          MapExRL
+                        <a href="https://rofunc.readthedocs.io/" class="dropdown-item" target="_blank">
+                          Documentation
                         </a>
                       </div>
                     </div>
@@ -325,12 +319,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Autonomous exploration in unknown environments requires estimating the information gain of an action to guide planning decisions. 
-              While prior approaches often compute information gain at discrete waypoints, pathwise integration offers a more comprehensive estimation but is often computationally challenging or infeasible and prone to overestimation. 
-              In this work, we propose the Pathwise Information Gain with Map Prediction for Exploration (PIPE) planner, which integrates cumulative sensor coverage along planned trajectories while leveraging map prediction to mitigate overestimation. 
-              To enable efficient pathwise coverage computation, we introduce a method to efficiently calculate the expected observation mask along the planned path, significantly reducing computational overhead. 
-              We validate PIPE on real-world floorplan datasets, demonstrating its superior performance over state-of-the-art baselines. 
-              Our results highlight the benefits of integrating predictive mapping with pathwise information gain for efficient and informed exploration. 
+              Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation. It provides valuable and convenient python functions, including demonstration collection, data pre-processing, LfD algorithms, planning, and control methods. We also provide an IsaacGym and OmniIsaacGym based robot simulator for evaluation. This package aims to advance the field by building a full-process toolkit and validation platform that simplifies and standardizes the process of demonstration data collection, processing, learning, and its deployment on robots.
             </p>
           </div>
         </div>
@@ -346,7 +335,7 @@
           <div class="column is-four-fifths">
             <h2 class="title is-3">Insight 1: Fast computation of pathwise sensor coverage</h2>
             <p>The core component of PIPE planner is to estimate information gain of each frontier, by integrating <b>cumulative sensor coverage</b> (estimated by raycasts) along each path. But this is computationally expensive. How do we compute the cumulative information gain efficiently?</p>
-            <img src="assets/vis-mask-generation.gif" alt="insight-1" />
+            <img src="static/images/CURIQbSoftHandSynergyGraspPhillips_Screw_DriverRofuncRLPPO.gif" alt="insight-1" />
             <p>Rather than performing a flood fill operation seprately for each raycast-generated polygon and then taking the union of the visibility masks, 
               we first merge the raycast-generated polygons into one and apply a single flood fill operation to the merged polygon. 
               We leverage computational geometry to address union of multiple nonconvex raycasted polygons (trapped regions or holes).
@@ -389,7 +378,7 @@
           <div class="column is-four-fifths">
             <h2 class="title is-3">Insight 2: Mitigate overestimation using map predictions</h2>
             <!-- <p>text here TODO </p> -->
-            <img src="assets/fig7.png" alt="insight-1" />
+            <img src="static/images/HumanoidDanceRofuncRLAMP.gif" alt="insight-1" />
             <!-- <p> text here2 TODO -->
             
             </p>
@@ -404,9 +393,9 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">PIPE Planner Overview</h2>
+          <h2 class="title is-3">Pipeline Overview</h2>
           <div class="content has-text-justified">
-            <img source src="assets/pipe-overview.png" />
+            <img source src="static/images/pipeline.png" />
             <p>
               The robot extracts frontiers from its observed occupancy grid map and generates predicted maps. 
               For each frontier, PIPE estimates path-integrated sensor coverage and generates a visibility mask for the full path. 
@@ -433,13 +422,13 @@
               <div class="content-section active" id="content-2-4">
                 <div class="content has-text-justified">
                   <!-- <p>text here1</p> -->
-                  <img src="assets/behavior-comparison.png" alt="Behavior Comparison" />
+                  <img src="static/images/RofuncAMP_HumanoidFlip_perf.webp" alt="Behavior Comparison" />
                 </div>
               </div>
               <div class="content-section" id="content-2-5">
                 <div class="content has-text-justified">
                   <!-- <p>text here2</p> -->
-                  <img src="assets/fig6_02.png" alt="Metrics" />
+                  <img src="static/images/RofuncAMP_HumanoidRun_perf.webp" alt="Metrics" />
                 </div>
               </div>
             </div>
@@ -485,11 +474,13 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @article{baek2025pipe,
-          title={PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration},
-          author={Baek, Seungjae and Moon, Brady and Kim, Seungchan and Cao, Muqing and Ho, Cherie and Scherer, Sebastian and others},
-          journal={arXiv preprint arXiv:2503.07504},
-          year={2025}
+        @article{liu2023rofunc,
+  title={Rofunc: The full process python package for robot learning from demonstration and robot manipulation},
+  author={Liu, J and Li, C and Delehelle, D and Li, Z and Chen, F},
+  journal={Chinese Univ. Hong Kong, Hong Kong, China, Tech. Rep},
+  volume={1},
+  pages={2023},
+  year={2023}
         }
       </code></pre>
     </div>
@@ -513,7 +504,7 @@
     }
     #block3 {
         height:33.33%;
-        width:30%;
+        width:10%;
         float: right;
     }
   </style>
@@ -525,8 +516,8 @@
   <div class="container">
       <div id="blocks">
         <div id="block1">
-          <a href="https://theairlab.org/">
-            <img src="static/images/Horizontal@2x.png" alt="AirLab Logo" style="width:60%;">
+          <a href="http://feichenlab.com/">
+            <img src="static/images/clover-logo-bg-3.png" alt="Clover Lab Logo" style="width:60%;">
           </a>
         </div>
         <div id="block2">
@@ -556,7 +547,7 @@
                   <img alt="Creative Commons License" style="border-width:0; height: 0.65rem;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
                 </a>
             </p>
-            <p class="" style="font-size: .65rem;">If you use the <a href="https://github.com/ia-tigris/ia-tigris.github.io">source code</a> of this webpage,
+            <p class="" style="font-size: .65rem;">If you use the <a href="https://github.com/Skylark0924/Rofunc">source code</a> of this webpage,
               please link back to this page in the footer.
             </p>
             <!-- <p>
@@ -566,8 +557,8 @@
           </center>
         </div>
         <div id="block3">
-          <a href="https://www.ri.cmu.edu/">
-            <img src="static/images/riLogo2019.svg" alt="RI Logo" style="float: right;">
+          <a href="https://www4.mae.cuhk.edu.hk/">
+            <img src="static/images/maelogo_large.png" alt="MAE Logo" style="float: right;">
           </a>
         </div>
       </div>
