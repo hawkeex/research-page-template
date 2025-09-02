@@ -1,59 +1,193 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation.">
-  <meta property="og:title" content="Rofunc: The Full Process Python Package for Robot Learning from Demonstration and Robot Manipulation"/>
-  <meta property="og:description" content="Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation."/>
-  <meta property="og:url" content="https://github.com/Skylark0924/Rofunc"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/images/thumbnail.png" />
-  <meta property="og:image:width" content="1280"/>
-  <meta property="og:image:height" content="720"/>
+  <meta name="description" content="PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration">
+  <meta name="keywords" content="Exploration, Map Prediction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration"/>
+  <meta property="og:description" content="PIPE Planner is an autonomous exploration planner that reasons over the expected information gain over planned paths."/>
+  <meta property="og:url" content="https://pipe-planner.github.io"/>
+  <title>PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
 
+  <meta property="og:image" content="https://pipe-planner.github.io/assets/thumbnail.png" />
+  <meta property="og:image:width" content="1281"/>
+  <meta property="og:image:height" content="721"/>
 
-  <meta name="twitter:title" content="Rofunc: The Full Process Python Package for Robot Learning from Demonstration and Robot Manipulation">
-  <meta name="twitter:description" content="Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation.">
+  <meta name="twitter:title" content="PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration">
+  <meta name="twitter:description" content="PIPE Planner is an autonomous exploration planner that reasons over the expected information gain over planned paths.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/thumbnail.png">
-  <meta name="twitter:card" content="static/images/thumbnail.png">
+  <meta name="twitter:image" content="https://pipe-planner.github.io/assets/thumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Rofunc: The Full Process Python Package for Robot Learning from Demonstration and Robot Manipulation</title>
-  <link rel="icon" type="image/x-icon" href="static/images/github_icon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143856064-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26LSMFKDDQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-LZ5X68ZYSN');
+  
+    gtag('config', 'G-PYVRSFMDRL');
+
+    gtag('config', 'G-H7BSVRVXTY');
+
+    gtag('config', 'G-26LSMFKDDQ');
   </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.36.1/gradio.js"></script>
+  <style>
+    .line-height-adjust {
+            line-height: 1.1;
+        }
+
+        .button-shadow {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .blockMobile {
+      display: none; /* Hide the component by default */
+    }
+
+    .image-overlay {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateX(30%) translateY(-50%);
+  }
+
+    @media only screen and (min-width: 768px) {
+      .blockMobile {
+        display: block; /* Show the component for screen width 768px and above (desktop) */
+      }
+    }
+
+    .showMobile {
+      display: none; /* Hide the component by default */
+    }
+
+    .bar-image {
+      max-width: 100px;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .showMobile {
+        display: block; /* Show the component for screen width 768px and above (desktop) */
+      }
+
+      .image-overlay {
+      position: relative; /* Move the image below the text */
+      top: 0;
+      transform: none; /* Remove vertical centering */
+      margin-top: 20px; /* Space between text and image */
+      margin-right: 0; /* Remove right alignment */
+    }
+
+    .bar-image {
+      display: none;
+    }
+    }
+
+    #dynamic-content {
+  position: relative; /* Ensure the content sections are positioned relative to this container */
+  min-height: 200px; /* Optional: Set a minimum height to prevent collapsing before content is displayed */
+    }
+
+    #dynamic-content .content-section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    #dynamic-content .content-section.active {
+      opacity: 1;
+      visibility: visible;
+      position: relative; /* Allow active content to influence the height of #dynamic-content */
+    }
+
+
+    /* Dropdown content styling */
+    .dropdown-content {
+      text-align: left !important;
+    }
+
+    .dropdown-item {
+      text-align: left !important;
+    }
+
+    /* Button alignment fix */
+    .publication-links .link-block {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 2px;
+    }
+
+    .publication-links .link-block .button,
+    .publication-links .link-block .dropdown-trigger .button {
+      height: 2.5em !important;
+      min-height: 2.5em !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      vertical-align: middle !important;
+    }
+
+    .dropdown {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* Fix dropdown button alignment */
+    .dropdown-trigger .button {
+      height: 2.5em !important; /* Match height of other buttons */
+      align-items: center;
+      display: inline-flex !important;
+    }
+
+  </style>
 </head>
+
 <body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <!-- <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://pipe-planner.github.io/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+      </div> -->
+    </div>
+  </nav>
 
 
   <section class="hero">
@@ -61,338 +195,338 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Rofunc: The Full Process Python Package for Robot Learning from Demonstration and Robot Manipulation</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+            <h1 class="title is-1 publication-title">PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration</h1>
+            <h3 class="is-size-5 has-text-weight-bold" style="color: orange;">
+              IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025
+            </h3>
+            <br>
+            <div class="is-size-6 publication-authors">
               <span class="author-block">
-                <a href="https://skylark0924.github.io/" target="_blank">Junjia Liu</a><sup class="small-sup">*1</sup>,
-              </span>
+                <a href="https://bsj970.github.io/" target="_blank">Seungjae Baek</a>*<sup>1,2</sup>,</span>
               <span class="author-block">
-                <a href="https://feichenlab.com/members/" target="_blank">Chenzui Li</a><sup class="small-sup">*1</sup>,
-              </span>
+                <a href="https://bradymoon.com/" target="_blank">Brady Moon</a>*<sup>2</sup>,</span>
               <span class="author-block">
-                <a href="https://feichenlab.com/members/" target="_blank">Donatie Delehelle</a><sup class="small-sup">2</sup>,
-              </span>
+                <a href="https://seungchan-kim.github.io" target="_blank">Seungchan Kim</a>*<sup>2</sup>,</span>
               <br>
               <span class="author-block">
-                <a href="https://feichenlab.com/members/" target="_blank">Zhihao Li</a><sup class="small-sup">1</sup>,
+                <a href="https://caomuqing.github.io/" target="_blank">Muqing Cao</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://cherieho.com/" target="_blank">Cherie Ho</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a><sup>2</sup>
               </span>
               <span class="author-block">
-                <a href="https://feichenlab.com/prof-chens-personal-page" target="_blank">Fei Chen</a><sup class="small-sup">1</sup>,
+                <a href="https://rml-unist.notion.site/" target="_blank">Jeong hwan Jeon</a><sup>1</sup>
               </span>
             </div>
-            
+
             <div class="is-size-6 publication-authors">
-              <span class="author-block"><sup>1</sup>The Chinese University of Hong Kong</span>
-              <span class="author-block"><sup>2</sup>Istituto Italiano di Tecnologia, University of Genova</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              <span class="author-block"><sup>1</sup>Ulsan National Institute of Science and Technology</span>
+              <br>
+              <span class="author-block"><sup>2</sup>Carnegie Mellon University Robotics Institute</span>
             </div>
-            
+
+            <div class="is-size-6 publication-authors">
+              * Equal Contributions
+            </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                    <!-- Arxiv PDF link -->
+                <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2502.15961.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
+                  <a href="https://arxiv.org/pdf/2503.07504" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
                 </span>
-
-                <!-- Supplementary PDF link -->
-                <!-- <span class="link-block">
-                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Supplementary</span>
-                </a>
-                </span> -->
-
-                <!-- Github link -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-                </span> -->
-
-                <!-- YouTube link -->
                 <span class="link-block">
-                  <a href="https://youtu.be/etFLanBdgHs" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
+                  <a href="https://arxiv.org/abs/2503.07504" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
+                <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2502.15961" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="https://github.com/castacks/pipe-planner"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://youtu.be/oZEqbCBRn-I" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Related Works Dropdown -->
+                <span class="link-block">
+                  <div class="dropdown is-hoverable">
+                    <div class="dropdown-trigger">
+                      <button class="button is-normal is-rounded is-dark" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="icon">
+                          <i class="fas fa-link"></i>
+                        </span>
+                        <span>Related Research</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                      <div class="dropdown-content">
+                        <a href="https://mapex-explorer.github.io" class="dropdown-item" target="_blank">
+                          MapEx Explorer
+                        </a>
+                        <a href="mapexrl.github.io" class="dropdown-item" target="_blank">
+                          MapExRL
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/intro_vid_final.m4v"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation. It provides valuable and convenient python functions, including demonstration collection, data pre-processing, LfD algorithms, planning, and control methods. We also provide an IsaacGym and OmniIsaacGym based robot simulator for evaluation. This package aims to advance the field by building a full-process toolkit and validation platform that simplifies and standardizes the process of demonstration data collection, processing, learning, and its deployment on robots.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation. It provides valuable and convenient python functions, including demonstration collection, data pre-processing, LfD algorithms, planning, and control methods. We also provide an IsaacGym and OmniIsaacGym based robot simulator for evaluation. This package aims to advance the field by building a full-process toolkit and validation platform that simplifies and standardizes the process of demonstration data collection, processing, learning, and its deployment on robots.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<!-- Insight 1 -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Insight 1: </h2>
-        <div class="content has-text-justified">
-          <p>
-            Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation. It provides valuable and convenient python functions, including demonstration collection, data pre-processing, LfD algorithms, planning, and control methods. We also provide an IsaacGym and OmniIsaacGym based robot simulator for evaluation. This package aims to advance the field by building a full-process toolkit and validation platform that simplifies and standardizes the process of demonstration data collection, processing, learning, and its deployment on robots.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/CURIQbSoftHandSynergyGraspPhillips_Screw_DriverRofuncRLPPO.gif" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Insight 2 -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Insight 2: </h2>
-        <div class="content has-text-justified">
-          <p>
-            Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation. It provides valuable and convenient python functions, including demonstration collection, data pre-processing, LfD algorithms, planning, and control methods. We also provide an IsaacGym and OmniIsaacGym based robot simulator for evaluation. This package aims to advance the field by building a full-process toolkit and validation platform that simplifies and standardizes the process of demonstration data collection, processing, learning, and its deployment on robots.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/HumanoidDanceRofuncRLAMP.gif" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Pipeline -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Pipeline</h2>
-        <div class="content has-text-justified">
-          <p>
-            Rofunc package focuses on the Imitation Learning (IL), Reinforcement Learning (RL) and Learning from Demonstration (LfD) for (Humanoid) Robot Manipulation. It provides valuable and convenient python functions, including demonstration collection, data pre-processing, LfD algorithms, planning, and control methods. We also provide an IsaacGym and OmniIsaacGym based robot simulator for evaluation. This package aims to advance the field by building a full-process toolkit and validation platform that simplifies and standardizes the process of demonstration data collection, processing, learning, and its deployment on robots.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Pipeline -->
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Youtube video -->
-<section class="hero is-small">
-  <div class="hero-body">
+  <section class="hero abstract_fig">
     <div class="container is-max-desktop">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video</h2>
+      <!-- <div class="hero-body">
+        <img src="assets/mapex_abstract_fig.jpg" />
+      </div> -->
+        <video id="pipe_fig1_video" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/PIPE-intro-gif.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          PIPE Planner is an autonomous exploration planner that reasons over the expected information gain over planned paths. 
+          It estimates cumulative sensor coverage along the paths, leveraging a map predictor to mitigate overestimation.
+        </h2>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
-        <div class="column">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/etFLanBdgHs?si=CD76ke_MN8pNG2Xz" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Autonomous exploration in unknown environments requires estimating the information gain of an action to guide planning decisions. 
+              While prior approaches often compute information gain at discrete waypoints, pathwise integration offers a more comprehensive estimation but is often computationally challenging or infeasible and prone to overestimation. 
+              In this work, we propose the Pathwise Information Gain with Map Prediction for Exploration (PIPE) planner, which integrates cumulative sensor coverage along planned trajectories while leveraging map prediction to mitigate overestimation. 
+              To enable efficient pathwise coverage computation, we introduce a method to efficiently calculate the expected observation mask along the planned path, significantly reducing computational overhead. 
+              We validate PIPE on real-world floorplan datasets, demonstrating its superior performance over state-of-the-art baselines. 
+              Our results highlight the benefits of integrating predictive mapping with pathwise information gain for efficient and informed exploration. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Insight 1: Fast computation of pathwise sensor coverage</h2>
+            <p>The core component of PIPE planner is to estimate information gain of each frontier, by integrating <b>cumulative sensor coverage</b> (estimated by raycasts) along each path. But this is computationally expensive. How do we compute the cumulative information gain efficiently?</p>
+            <img src="assets/vis-mask-generation.gif" alt="insight-1" />
+            <p>Rather than performing a flood fill operation seprately for each raycast-generated polygon and then taking the union of the visibility masks, 
+              we first merge the raycast-generated polygons into one and apply a single flood fill operation to the merged polygon. 
+              We leverage computational geometry to address union of multiple nonconvex raycasted polygons (trapped regions or holes).
+            </p>
+            <!-- <div class="buttons is-centered">
+              <button class="button is-primary line-height-adjust button-shadow" onclick="showContent(1,1)">Visibility Masks</button>
+              <button class="button is-link button-shadow" onclick="showContent(2,1)">Insight2</button>
+              <button class="button is-success button-shadow" onclick="showContent(3,1)">Insight 3</button>
+            </div> -->
+            <!-- <div id="dynamic-content">
+              <div class="content-section active" id="content-1-1">
+                <div class="content has-text-justified">
+                  <p>insight 1 text </p>
+                  
+                </div>
+              </div>
+              <div class="content-section" id="content-1-2">
+                <div class="content has-text-justified">
+                  <p>Text here</p>
+                  <img src="" alt="vis-mask" />
+                </div>
+              </div>
+              <div class="content-section" id="content-1-3">
+                <div class="content has-text-justified">
+                  <p>insight 3 </p>
+                  <img src="" alt="insight-3" />
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Insight 2: Mitigate overestimation using map predictions</h2>
+            <!-- <p>text here TODO </p> -->
+            <img src="assets/fig7.png" alt="insight-1" />
+            <!-- <p> text here2 TODO -->
+            
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">PIPE Planner Overview</h2>
+          <div class="content has-text-justified">
+            <img source src="assets/pipe-overview.png" />
+            <p>
+              The robot extracts frontiers from its observed occupancy grid map and generates predicted maps. 
+              For each frontier, PIPE estimates path-integrated sensor coverage and generates a visibility mask for the full path. 
+              It computes pathwise information gain by summing the pixelwise variance of predictions within the visibility mask. 
+              The robot then selects the frontier with the highest information gain for exploration planning.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Results</h2>
+            <div class="buttons is-centered">
+              <button class="button is-primary line-height-adjust button-shadow" onclick="showContent(4,2)">Behavior Comparison</button>
+              <button class="button is-link button-shadow" onclick="showContent(5,2)">Metrics</button>
+            </div>
+            <div id="dynamic-content">
+              <div class="content-section active" id="content-2-4">
+                <div class="content has-text-justified">
+                  <!-- <p>text here1</p> -->
+                  <img src="assets/behavior-comparison.png" alt="Behavior Comparison" />
+                </div>
+              </div>
+              <div class="content-section" id="content-2-5">
+                <div class="content has-text-justified">
+                  <!-- <p>text here2</p> -->
+                  <img src="assets/fig6_02.png" alt="Metrics" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/oZEqbCBRn-I?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small"> -->
-  <!-- <div class="hero-body"> -->
-    <!-- <div class="container"> -->
-      <!-- <h2 class="title is-3">Another Carousel</h2> -->
-      <!-- <div id="results-carousel" class="carousel results-carousel"> -->
-        <!-- <div class="item item-video1"> -->
-          <!-- <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4" -->
-            <!-- type="video/mp4"> -->
-          <!-- </video> -->
-        <!-- </div> -->
-        <!-- <div class="item item-video2"> -->
-          <!-- <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4" -->
-            <!-- type="video/mp4"> -->
-          <!-- </video> -->
-        <!-- </div> -->
-        <!-- <div class="item item-video3"> -->
-          <!-- <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4" -->
-            <!-- type="video/mp4"> -->
-          <!-- </video> -->
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </section> -->
-<!-- End video carousel -->
+  <!-- <section class="hero is-small is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Acknowledgments</h2>
+          <div class="content has-text-centered">
+            <p>
+              This work was supported by the National Institute of Advanced Industrial Science and Technology (AIST), 
+              DSTA contract No. DST000EC124000205, NSF GRFP under Grant No. DGE1745016, a hardware grant from Nvidia, 
+              and by Institute of Information & communications Technology Planning & Evaluation (IITP) grants by the Korean government (MSIT) (No.RS-2022-00143911, 
+              AI Excellence Global Innovative Leader Education Program; No.RS-2020-II201336, Artificial Intelligence graduate school support (UNIST); and No.RS-2024-00341055).
+            </p>
+          </div>
+        </div>
+      </div>
+  </section> -->
 
-
-
-<!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc@article{liu2023rofunc,
-  title={Rofunc: The full process python package for robot learning from demonstration and robot manipulation},
-  author={Liu, J and Li, C and Delehelle, D and Li, Z and Chen, F},
-  journal={Chinese Univ. Hong Kong, Hong Kong, China, Tech. Rep},
-  volume={1},
-  pages={2023},
-  year={2023}
-}
-  </code></pre>
+      <pre><code>
+        @article{baek2025pipe,
+          title={PIPE Planner: Pathwise Information Gain with Map Predictions for Indoor Robot Exploration},
+          author={Baek, Seungjae and Moon, Brady and Kim, Seungchan and Cao, Muqing and Ho, Cherie and Scherer, Sebastian and others},
+          journal={arXiv preprint arXiv:2503.07504},
+          year={2025}
+        }
+      </code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
-<style>
-  #blocks {
-      width:100%;
-      height:60px;
-      margin:0 auto;
-  }
-  #block1 {
-      height:33.33%;
-      width:30%;
-      float: left;
-  }
-  #block2 {
-      height:33.33%;
-      width:40%;
-      float: left;
-  }
-  #block3 {
-      height:33.33%;
-      width:10%;
-      float: right;
-  }
-</style>
+  <style>
+    #blocks {
+        width:100%;
+        height:60px;
+        margin:0 auto;
+    }
+    #block1 {
+        height:33.33%;
+        width:30%;
+        float: left;
+    }
+    #block2 {
+        height:33.33%;
+        width:40%;
+        float: left;
+    }
+    #block3 {
+        height:33.33%;
+        width:30%;
+        float: right;
+    }
+  </style>
+  
+
+
 
 <footer class="footer">
   <div class="container">
       <div id="blocks">
         <div id="block1">
-          <a href="http://feichenlab.com/">
-            <img src="static/images/clover-logo-bg-3.png" alt="Clover Lab Logo" style="width:60%;">
+          <a href="https://theairlab.org/">
+            <img src="static/images/Horizontal@2x.png" alt="AirLab Logo" style="width:60%;">
           </a>
         </div>
         <div id="block2">
@@ -422,7 +556,7 @@
                   <img alt="Creative Commons License" style="border-width:0; height: 0.65rem;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
                 </a>
             </p>
-            <p class="" style="font-size: .65rem;">If you use the <a href="https://github.com/Skylark0924/Rofunc">source code</a> of this webpage,
+            <p class="" style="font-size: .65rem;">If you use the <a href="https://github.com/ia-tigris/ia-tigris.github.io">source code</a> of this webpage,
               please link back to this page in the footer.
             </p>
             <!-- <p>
@@ -432,19 +566,36 @@
           </center>
         </div>
         <div id="block3">
-          <a href="https://www4.mae.cuhk.edu.hk/">
-            <img src="static/images/maelogo_large.png" alt="MAE Logo" style="float: right;">
+          <a href="https://www.ri.cmu.edu/">
+            <img src="static/images/riLogo2019.svg" alt="RI Logo" style="float: right;">
           </a>
         </div>
       </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<script>
+  function showContent(option,section) {
+      // Remove the active class from all sections
+      // const parentContainer = document.getElementById(`dynamic-content-${section}`);
 
-    <!-- End of Statcounter Code -->
+      const button = event.target;
+      const parentContainer = button.closest(".hero");
 
-  </body>
-  </html>
+      // Remove the active class from all content sections within this container
+      const sections = parentContainer.querySelectorAll(".content-section");
+      sections.forEach(contentSection => {
+        contentSection.classList.remove("active");
+      });
+
+      // Add the active class to the selected section
+      const selectedSection = document.getElementById(`content-${section}-${option}`);
+      if (selectedSection) {
+        selectedSection.classList.add("active");
+      }
+    }
+</script>
+
+</body>
+
+</html>
