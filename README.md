@@ -1,5 +1,5 @@
-# IA-TIGRIS: An Incremental and Adaptive Sampling-based Planner for Online Informative Path Planning
-Webpage for the paper [IA-TIGRIS: An Incremental and Adaptive Sampling-based Planner for Online Informative Path Planning](https://arxiv.org/abs/2502.15961).
+# Research page template fpr Clover Lab
+Webpage for the paper [PAPER TITLE](PAPERLINK).
 
 ## Tips:
 - The `index.html` file contains comments instructing you what to replace, you should follow these comments.
